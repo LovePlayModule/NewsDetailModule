@@ -17,6 +17,7 @@
 #import <NewsCommentModule/NewsCommentCellNode.h>
 //C
 //#import "NewsCommentViewController.h"
+#import <NewsComment_Category/Mediator+NewsComment.h>
 //Other
 #import <Tools/Macros.h>
 #import <YYKit/YYKit.h>
@@ -201,9 +202,9 @@ NSString * const NewsDetailURL = @"/news/appDetail";
         if (_detailModel.tie.comments.count > 0) {
             footerView.title = @"查看更多跟帖";
             [footerView commentFooterViewTouchBlock:^{
-//                NewsCommentViewController *commentViewController = [[NewsCommentViewController alloc] init];
+                UIViewController *commentViewController = [[Mediator sharedInstance] NewsComment_viewControllerWithNewsID:_newsID];
 //                commentViewController.newsID = _newsID;
-//                [self.navigationController pushViewController:commentViewController animated:YES];
+                [self.navigationController pushViewController:commentViewController animated:YES];
             }];
             return footerView;
         }

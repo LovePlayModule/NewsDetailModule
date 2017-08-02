@@ -58,7 +58,8 @@
 {
     _htmlBody = htmlBody;
     if (htmlBody.length > 0) {
-        NSURL *cssURL = [NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:@"News" ofType:@"css"]];
+        NSBundle *bundle = [NSBundle bundleWithURL: [[NSBundle bundleForClass:[self class]] URLForResource:@"NewsDetailModule" withExtension:@"bundle"]];
+        NSURL *cssURL = [NSURL fileURLWithPath:[bundle pathForResource:@"NewsDetail" ofType:@"css"]];
         [_webView loadHTMLString:[self handleWithHtmlBody:htmlBody] baseURL:cssURL];
     }
 }
@@ -66,7 +67,7 @@
 - (NSString *)handleWithHtmlBody:(NSString *)htmlBody
 {
     NSString *html = [htmlBody stringByReplacingOccurrencesOfString:@"\t" withString:@""];
-    NSString *cssName = @"News.css";
+    NSString *cssName = @"NewsDetail.css";
     NSMutableString *htmlString =[[NSMutableString alloc]initWithString:@"<html>"];
     [htmlString appendString:@"<head><meta charset=\"UTF-8\">"];
     [htmlString appendString:@"<link rel =\"stylesheet\" href = \""];

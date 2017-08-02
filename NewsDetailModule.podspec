@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'NewsDetailModule'
-  s.version          = '0.1.0'
+  s.version          = '0.1.2'
   s.summary          = 'NewsDetailModule.'
 
 # This description is used to generate tags and improve search results.
@@ -58,6 +58,7 @@ TODO: Add long description of NewsDetailModule.
     ss.dependency 'Masonry'
     ss.dependency 'Network'
 
+    ss.dependency 'NewsComment_Category'
     ss.dependency 'NewsDetailModule/Model'
     ss.dependency 'NewsDetailModule/View'
     ss.dependency 'NewsCommentModule/View' #添加依赖：评论cell组件
@@ -68,9 +69,10 @@ TODO: Add long description of NewsDetailModule.
 
     ss.dependency 'NewsDetailModule/Controller'
   end
-  # s.resource_bundles = {
-  #   'NewsDetailModule' => ['NewsDetailModule/Assets/*.png']
-  # }
+
+  s.resource_bundles = {
+    'NewsDetailModule' => ['NewsDetailModule/Assets/*']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

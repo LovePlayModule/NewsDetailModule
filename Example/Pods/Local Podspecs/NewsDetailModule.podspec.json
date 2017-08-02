@@ -1,6 +1,6 @@
 {
   "name": "NewsDetailModule",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "summary": "NewsDetailModule.",
   "description": "TODO: Add long description of NewsDetailModule.",
   "homepage": "https://github.com/LovePlayModule/NewsDetailModule",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/LovePlayModule/NewsDetailModule",
-    "tag": "0.1.0"
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "8.0"
@@ -24,6 +24,11 @@
     "Controller",
     "Targets"
   ],
+  "resource_bundles": {
+    "NewsDetailModule": [
+      "NewsDetailModule/Assets/*"
+    ]
+  },
   "subspecs": [
     {
       "name": "Model",
@@ -66,6 +71,9 @@
 
         ],
         "Network": [
+
+        ],
+        "NewsComment_Category": [
 
         ],
         "NewsDetailModule/Model": [

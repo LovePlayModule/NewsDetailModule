@@ -1,0 +1,1 @@
+../../../NewsComment_Category/NewsComment_Category/Classes/NewsComment_Category/Mediator+NewsComment.h

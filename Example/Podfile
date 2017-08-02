@@ -7,6 +7,7 @@ target 'NewsDetailModule_Example' do
 
   pod 'Tools'
   pod 'Network'
+  pod 'NewsComment_Category'
   pod 'NewsCommentModule/Model'
   pod 'NewsCommentModule/View'
 
