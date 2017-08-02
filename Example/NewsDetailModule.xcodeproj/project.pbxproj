@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		250E5F5695B7E04C1A316ADA /* Pods_NewsDetailModule_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F203A7BDC2ADCEBA4C5EBBD3 /* Pods_NewsDetailModule_Tests.framework */; };
-		5CD9B69E739B7F63F6AB2564 /* Pods_NewsDetailModule_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE21F3AB7E543613638B0EA1 /* Pods_NewsDetailModule_Example.framework */; };
+		19A3A4135D25C956A0E506A4 /* libPods-NewsDetailModule_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 589CE83B2BA5BA402416F416 /* libPods-NewsDetailModule_Example.a */; };
+		47E0C896F98F2DE0C04585F1 /* libPods-NewsDetailModule_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C8471E56B556EA81F00A6C99 /* libPods-NewsDetailModule_Tests.a */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -39,6 +39,7 @@
 /* Begin PBXFileReference section */
 		0943C9AE20C92C72DF839A4B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		2C4C793C1E73B98980A35F0C /* Pods-NewsDetailModule_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsDetailModule_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-NewsDetailModule_Example/Pods-NewsDetailModule_Example.release.xcconfig"; sourceTree = "<group>"; };
+		589CE83B2BA5BA402416F416 /* libPods-NewsDetailModule_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NewsDetailModule_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F51EBF055527082E5221ED3 /* Pods-NewsDetailModule_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsDetailModule_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NewsDetailModule_Tests/Pods-NewsDetailModule_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* NewsDetailModule_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsDetailModule_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -64,9 +65,8 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9C4BF59DEA6190F131EC2390 /* Pods-NewsDetailModule_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsDetailModule_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NewsDetailModule_Example/Pods-NewsDetailModule_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C73D22122BE76CE00135052A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		CE21F3AB7E543613638B0EA1 /* Pods_NewsDetailModule_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewsDetailModule_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8471E56B556EA81F00A6C99 /* libPods-NewsDetailModule_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NewsDetailModule_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA09C026FE17BAC81CC7E66B /* Pods-NewsDetailModule_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsDetailModule_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NewsDetailModule_Tests/Pods-NewsDetailModule_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		F203A7BDC2ADCEBA4C5EBBD3 /* Pods_NewsDetailModule_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewsDetailModule_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +77,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				5CD9B69E739B7F63F6AB2564 /* Pods_NewsDetailModule_Example.framework in Frameworks */,
+				19A3A4135D25C956A0E506A4 /* libPods-NewsDetailModule_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +88,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				250E5F5695B7E04C1A316ADA /* Pods_NewsDetailModule_Tests.framework in Frameworks */,
+				47E0C896F98F2DE0C04585F1 /* libPods-NewsDetailModule_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,8 +123,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				CE21F3AB7E543613638B0EA1 /* Pods_NewsDetailModule_Example.framework */,
-				F203A7BDC2ADCEBA4C5EBBD3 /* Pods_NewsDetailModule_Tests.framework */,
+				589CE83B2BA5BA402416F416 /* libPods-NewsDetailModule_Example.a */,
+				C8471E56B556EA81F00A6C99 /* libPods-NewsDetailModule_Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

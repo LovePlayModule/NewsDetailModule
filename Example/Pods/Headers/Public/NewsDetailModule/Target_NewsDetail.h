@@ -1,0 +1,1 @@
+../../../../../NewsDetailModule/Classes/Targets/Target_NewsDetail.h

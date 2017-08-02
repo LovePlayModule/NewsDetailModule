@@ -1,0 +1,1 @@
+../../../NewsCommentModule/NewsCommentModule/Classes/Model/NewsCommentModel.h
