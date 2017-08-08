@@ -59,7 +59,7 @@
     _htmlBody = htmlBody;
     if (htmlBody.length > 0) {
         NSBundle *bundle = [NSBundle bundleWithURL: [[NSBundle bundleForClass:[self class]] URLForResource:@"NewsDetailModule" withExtension:@"bundle"]];
-        NSURL *cssURL = [NSURL fileURLWithPath:[bundle pathForResource:@"NewsDetail" ofType:@"css"]];
+        NSURL *cssURL = [NSURL fileURLWithPath:[bundle pathForResource:@"NewsDetail.css" ofType:nil]];
         [_webView loadHTMLString:[self handleWithHtmlBody:htmlBody] baseURL:cssURL];
     }
 }

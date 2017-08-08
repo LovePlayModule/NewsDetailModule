@@ -29,9 +29,8 @@
              params:(NSDictionary *)params
       isCacheTarget:(BOOL)isCacheTarget
 {
-    NSString *targetClassString = [NSString stringWithFormat:@"Target_%@", targetName];
-    NSString *actionSelString = [NSString stringWithFormat:@"Action_%@:", actionName];
     //1.target
+    NSString *targetClassString = [NSString stringWithFormat:@"Target_%@", targetName];
     Class targetClass = nil;
     NSObject *target = self.cachedTargetMap[targetClassString];
     if (target == nil) {
@@ -39,9 +38,11 @@
         target = [[targetClass alloc] init];
     }
     //2.action
+    NSString *actionSelString = [NSString stringWithFormat:@"Action_%@:", actionName];
     SEL action = NSSelectorFromString(actionSelString);
     if (action == nil) {
-        return nil;
+        UIViewController *viewController = [self exceptoinViewController:@"Action is nil"];
+        return viewController;
     }
     //3.cache
     if (isCacheTarget) {
@@ -58,7 +59,8 @@
             return [target performSelector:action withObject:params];
         }else{
             [self.cachedTargetMap removeObjectForKey:targetClassString];
-            return nil;
+            UIViewController *viewController = [self exceptoinViewController:@"Not this Action"];
+            return viewController;
         }
     }
 #pragma clang diagnostic pop
@@ -77,5 +79,17 @@
         _cachedTargetMap = [NSMutableDictionary dictionary];
     }
     return _cachedTargetMap;
+}
+
+- (UIViewController *)exceptoinViewController:(NSString *)exceptoin
+{
+    UIViewController *viewController = [[UIViewController alloc] init];
+    viewController.view.backgroundColor = [UIColor whiteColor];
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, viewController.view.bounds.size.width, 30)];
+    label.center = viewController.view.center;
+    label.text = exceptoin;
+    label.textAlignment = NSTextAlignmentCenter;
+    [viewController.view addSubview:label];
+    return viewController;
 }
 @end

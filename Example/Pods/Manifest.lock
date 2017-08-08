@@ -15,24 +15,24 @@ PODS:
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
   - Masonry (1.0.2)
-  - Mediator (0.1.0)
+  - Mediator (0.1.1)
   - Network (0.1.0):
     - AFNetworking
   - NewsComment_Category (0.1.0):
     - Mediator
-  - NewsCommentModule/Model (0.1.0):
+  - NewsCommentModule/Model (0.1.1):
     - YYKit
-  - NewsCommentModule/View (0.1.0):
+  - NewsCommentModule/View (0.1.1):
     - Masonry
     - NewsCommentModule/Model
     - Tools
     - YYKit
-  - NewsDetailModule (0.1.1):
-    - NewsDetailModule/Controller (= 0.1.1)
-    - NewsDetailModule/Model (= 0.1.1)
-    - NewsDetailModule/Targets (= 0.1.1)
-    - NewsDetailModule/View (= 0.1.1)
-  - NewsDetailModule/Controller (0.1.1):
+  - NewsDetailModule (0.1.2):
+    - NewsDetailModule/Controller (= 0.1.2)
+    - NewsDetailModule/Model (= 0.1.2)
+    - NewsDetailModule/Targets (= 0.1.2)
+    - NewsDetailModule/View (= 0.1.2)
+  - NewsDetailModule/Controller (0.1.2):
     - Masonry
     - Network
     - NewsComment_Category
@@ -41,11 +41,11 @@ PODS:
     - NewsDetailModule/View
     - Tools
     - YYKit
-  - NewsDetailModule/Model (0.1.1):
+  - NewsDetailModule/Model (0.1.2):
     - NewsCommentModule/Model
-  - NewsDetailModule/Targets (0.1.1):
+  - NewsDetailModule/Targets (0.1.2):
     - NewsDetailModule/Controller
-  - NewsDetailModule/View (0.1.1):
+  - NewsDetailModule/View (0.1.2):
     - Masonry
     - NewsDetailModule/Model
     - Tools
@@ -74,11 +74,11 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
-  Mediator: 5b8aebadf067de253f3f81900b4bea0909373842
+  Mediator: e56124b3519bb79e289f635092f818d3412f225e
   Network: 4a952f29d06daa87d43ab9111f5b31a1e99655eb
   NewsComment_Category: b502e97cb879ebf211222da1ebe10c133df0b141
-  NewsCommentModule: dd2ed5fd5356ee538c001d7f08a82a6601169ffb
-  NewsDetailModule: ca085df337264cb7c895c6556a430cf954c59f48
+  NewsCommentModule: 5d0af0679af0484d457278d7abe7389da3790524
+  NewsDetailModule: 133ef58cf204ae3f65f14c939646b707feedb73b
   Tools: c7d2011889d8111e9cc2d40c29ab2183d1835de9
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 

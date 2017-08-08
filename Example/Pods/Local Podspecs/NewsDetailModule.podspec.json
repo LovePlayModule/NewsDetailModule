@@ -1,6 +1,6 @@
 {
   "name": "NewsDetailModule",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "summary": "NewsDetailModule.",
   "description": "TODO: Add long description of NewsDetailModule.",
   "homepage": "https://github.com/LovePlayModule/NewsDetailModule",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/LovePlayModule/NewsDetailModule",
-    "tag": "0.1.1"
+    "tag": "0.1.2"
   },
   "platforms": {
     "ios": "8.0"

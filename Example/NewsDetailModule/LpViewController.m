@@ -7,8 +7,11 @@
 //
 
 #import "LpViewController.h"
+#import <Network/HttpRequest.h>
+#import <NewsDetailModule/Target_NewsDetail.h>
 
 @interface LpViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *newsIDTextField;
 
 @end
 
@@ -17,7 +20,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+    [[HttpRequest sharedInstance] configBaseURL:@"https://i.play.163.com"];
+    
+}
+
+- (IBAction)pushToNext:(id)sender {
+    
+    NSDictionary *params = @{@"newsIDKey" : self.newsIDTextField.text};
+    Target_NewsDetail *target = [[Target_NewsDetail alloc] init];
+    UIViewController *viewController = [target Action_viewController:params];
+    [self.navigationController pushViewController:viewController animated:YES];
 }
 
 - (void)didReceiveMemoryWarning
